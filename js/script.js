@@ -79,6 +79,9 @@ $(document).ready(() => {
         $(this).fadeOut();
       }
     });
+    if (taskItems.length > 0) {
+      $("#noTasksMessage").hide();
+    }
   };
 
   $("#taskList").on("click", ".complete-btn", function () {
