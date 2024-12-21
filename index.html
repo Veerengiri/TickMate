@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+
+  <meta name="description" content="A simple and efficient task manager application to keep track of your tasks.">
+  <meta name="keywords" content="task manager, to-do list, productivity, task management, jQuery">
+  <meta name="author" content="Veerengiri Goswami">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="icon" href="./imgs/logotop.png">
+</head>
+<body>
+  <header>
+    <div class="logoSection">
+      <img src="./imgs/logotop.png" alt="logo" width="80px" height="auto">
+      <h2>TaskManager</h2>
+    </div>
+    <nav class="filter-section">
+      <select id="filterTasks" aria-label="Filter Tasks">
+        <option value="all">All Tasks</option>
+        <option value="completed">Completed Tasks</option>
+        <option value="pending">Pending Tasks</option>
+      </select>
+    </nav>
+  </header>
+  <main> 
+    <section class="task-input">
+      <input type="text" id="newTask" placeholder="Enter a new task" aria-label="New Task">
+      <button id="addTaskBtn" aria-label="Add Task">Add Task</button>
+    </section>
+    <ul id="taskList" class="task-list" aria-live="polite">
+      <li id="noTasksMessage" class="no-tasks">No tasks available. Add a new task to get started!</li>
+    </ul>
+  </main>
+  
+  <!-- External Libraries and Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="./js/script.js"></script>
+  <footer>
+    <p>Made by Veerengiri Goswami</p>
+  </footer>
+</body>
+</html>
